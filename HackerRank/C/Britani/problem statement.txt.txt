@@ -1,0 +1,76 @@
+This is an introductory challenge to help you get familiar with the HackerRank coding environment.
+Complete the function solveMeFirst to compute the sum of two integers.
+
+Function prototype:
+
+int solveMeFirst(int a, int b);
+
+where,
+
+a is the first integer input.
+b is the second integer input
+Return values
+
+sum of the above two integers
+Sample Input
+
+a = 2
+b = 3
+Sample Output
+
+5
+Explanation
+
+The sum of the two integers  and  is computed as: .
+
+ 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int solveMeFirst(int a, int b) {
+    // Hint: Type return a+b; below
+ 
+}
+
+int main() {
+    int num1,num2;
+    scanf("%d %d",&num1,&num2)
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+int solveMeFirst(int a, int b) {
+7
+    // Hint: Type return a+b; below
+8
+ 
+9
+}
+10
+​
+11
+int main() {
+12
+    int num1,num2;
+13
+    scanf("%d %d",&num1,&num2);
+14
+    int sum; 
+15
+    sum = solveMeFirst(num1,num2);
+16
+    printf("%d",sum);
+17
+    return 0;
+18
+}
+Line: 13 Col: 31
