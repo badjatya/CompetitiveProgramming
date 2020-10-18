@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+main() 
+{ 
+   const int a = 5; 
+   
+   a++; 
+   printf("%d", a); 
+}
+A - 5
+
+B - 6
+
+C - Runtime error
+
+D - Compile error
