@@ -1,0 +1,30 @@
+//stack through linked list
+
+#include<stdio.h>
+#include<stdlib.h>
+
+struct Node
+{
+    int data;
+    struct Node *next;
+};
+
+linkedListTraversal()
+{
+
+}
+
+createNewNode(int capacity)
+{
+    struct Node* head ,p ;
+
+    head = (struct Node*)malloc(sizeof(struct Node));
+
+    p = (struct Node*)malloc((capacity-1) * sizeof(struct Node));
+
+}
+
+int main()
+{
+
+}
