@@ -1,0 +1,11 @@
+#include<iostream.h>
+int sum;
+cout << "Type a number: ";
+cin >> x;
+cout << "Type another number: ";
+cin >> y;
+void main()
+{
+sum = x + y;
+cout << "Sum is: " << sum;
+}
