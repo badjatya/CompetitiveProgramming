@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+ int findPrime(int);
+ int main(){
+     int i;
+     int number;
+     cout << "Program to print prime numbers:"<<endl;
+     cout << "Enter any number :" << endl;
+     cin >> number;
+     cout << "Prime number till "<< number << " are :";
+     for(i=1; i<=number; i++){
+         if(findPrime(i) == i){
+             cout << i << ", ";
+         }
+     }
+ }
+ 
+ int findPrime(int n){
+     int i;
+     int count=0;
+     for(i=1; i<=n; i++){
+         if(n%i == 0){
+             count++;
+         }
+     }
+     if(count <= 2){
+         return n;
+     }
+     return 0;
+ }
