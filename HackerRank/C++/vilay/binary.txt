@@ -1,0 +1,32 @@
+
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int binary(int n){
+    int a[1000];
+    int i=0,j;
+    while(n>0){
+        a[i]=n%2;
+        n=n/2;
+        i++;
+    }
+    for(j=i-1; j>=0; j--){
+        printf("%d",a[j]);
+    }
+    return 0;
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+	binary(n);
+   // printf("%d",ans(n));
+    return 0;
+} 
+
