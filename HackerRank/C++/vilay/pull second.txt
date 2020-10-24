@@ -1,0 +1,73 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Bank{
+    private:
+    static int balance;
+    public:
+    void withdraw(int w){
+        if(w > balance){
+            cout<< "Insufficient Balance" << endl;
+        }
+        else{
+            balance = balance - w;
+            cout << "Rs " << w << " is withdrawn." << endl;
+        }
+    }
+    int deposit(int d){
+        balance = balance + d;
+        return d;
+    }
+    int checkBalance(){
+        return balance;
+    }
+};
+int Bank::balance = 10000;
+
+int main(){
+    int userEnter;
+    int amount,ans;
+    string repeat;
+    Bank user;
+    bank:
+    Bank user1;
+    cout << "Select one of the following:" << endl;
+    cout << "1 - checkBalance" << endl;
+    cout << "2 - wihdraw" << endl;
+    cout << "3 - deposit" << endl;
+    cout << "Enter :" ;
+    cin  >> userEnter;
+    switch(userEnter){
+        case 1:
+        cout << "You current balance is : " << user.checkBalance() << endl; 
+        break;
+        
+        case 2:
+        cout << "Enter amount you want to withdraw :";
+        cin  >> amount;
+        user.withdraw(amount);
+        break;
+        
+        case 3:
+        cout << "Enter amount your want to deposit :";
+        cin  >> amount;
+        ans = user.deposit(amount);
+        cout << "Rs " << ans << " is deposited to your account." << endl;
+        break;
+        
+        default:
+        cout << "Please enter the number between 1 to 3." << endl;
+        goto bank;
+    }
+    cout << "Enter 'continue' to CONTINUE the process or any other key to QUIT :";
+    cin  >> repeat;
+    if(repeat.compare("continue")==0){
+    goto bank;
+    }
+    else{
+        cout << "Thankyou!" << endl;
+        exit(0);
+    }
+    return 0;
+}
