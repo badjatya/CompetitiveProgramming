@@ -1,3 +1,3 @@
-#Hactoberfest
+# Hactoberfest
 Hi My name is Nandini Chhajed
-### I am a student
+### I am a student at Indore
